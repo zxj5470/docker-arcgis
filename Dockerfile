@@ -10,16 +10,15 @@ ADD ArcGIS_for_Server_Linux_104_149446.tar.gz /arcgis/
 
 ENV USER arcgis
 ENV GROUP arcgis
-ENV USERDIR /home/$USER
 
 RUN groupadd $GROUP
 RUN useradd -m -r $USER -g $GROUP
 
 RUN mkdir -p /arcgis/server
-RUN chown -R $USER /arcgis
+RUN chown -R $USER:$GROUP /arcgis
 RUN chmod -R 755 /arcgis
 
-EXPOSE 6080 6443 4004 4001 4002
+EXPOSE 6080 6443 4001 4002 4004
 
 USER $USER
 
