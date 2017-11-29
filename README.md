@@ -7,7 +7,10 @@ The following steps will bootstrap a Linux flavored [ArcGIS for Server](http://w
 The following will start a local [docker machine](https://docs.docker.com/machine/get-started/) in [VirtualBox](https://docs.docker.com/machine/drivers/virtualbox/) named `arcgis` with `8GB` of Memory, `4` CPUs and with `32GB` of disk space.
 
 * (update) change Dockerfile `centos:latest` into `centos:6.7` otherwise it won't succeed.
-
+* (use Volume)
+    - create a volume 
+    - copy files 
+    - then use with recycle
 ```bash
 docker-machine create\
  --driver virtualbox\
