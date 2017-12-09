@@ -11,6 +11,9 @@ The following will start a local [docker machine](https://docs.docker.com/machin
     - create a volume 
     - copy files 
     - then use with recycle
+```bask
+docker run -it -v arc:/arcgis/ -p 6080:6080 registry.cn-hangzhou.aliyuncs.com/zxj5470/arcgis-server
+```
 ```bash
 docker-machine create\
  --driver virtualbox\
