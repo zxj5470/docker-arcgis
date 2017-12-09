@@ -2,6 +2,8 @@
 
 The following steps will bootstrap a Linux flavored [ArcGIS for Server](http://www.esri.com/software/arcgis/arcgisserver) in a [docker](https://www.docker.com/) container.
 
+【by zxj5470】[中文版/使用阿里云镜像构建](./README_zh_CN.md)
+
 ## Start A Machine
 
 The following will start a local [docker machine](https://docs.docker.com/machine/get-started/) in [VirtualBox](https://docs.docker.com/machine/drivers/virtualbox/) named `arcgis` with `8GB` of Memory, `4` CPUs and with `32GB` of disk space.
